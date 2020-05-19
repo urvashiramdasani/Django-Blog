@@ -3,6 +3,7 @@ Commands : -
 1) To create new virtual environment - virtualenv venv
 2) To activate the above created command
 C:\Users\Urvashi\Desktop\Practical_10\venv\Scripts\activate.bat
+(Install django every time you create a project in this step)
 3) Create Project named EmployeeAttendance - django-admin startproject EmployeeAttendance
 4) To create an app - python manage.py startapp csv_app
 5) Create urls.py in csv_app
