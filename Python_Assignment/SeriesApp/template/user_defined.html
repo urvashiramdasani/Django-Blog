@@ -1,0 +1,39 @@
+<!-- This form asks user to create a new series. It accepts the name and the seeding parameters from user. -->
+
+{% load crispy_forms_tags %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Create Your Own Series</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		form {
+			margin: auto 400px;
+			padding-bottom: 500px;
+			padding-top: 100px;
+		}
+	</style>
+</head>
+<body>
+	<form method="POST">
+		{% csrf_token %}
+		<div class="form-group">
+			<label for="name">Name of your series</label>
+			<input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
+		</div>
+		<div class="form-group">
+			<label for="expr">Expression / Formula of series (variable x)</label>
+			<input type="text" id="expr" name="expr" class="form-control" placeholder="a*x + b" required="required">
+		</div>
+		<div class="form-group">
+			<input type="submit" class="btn btn-primary" value="Create">
+		</div>
+	</form>
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

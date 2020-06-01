@@ -1,0 +1,62 @@
+<!-- This form accepts the values of name and parameters to display result. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculate</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style type="text/css">
+		form {
+			margin: auto 400px;
+			padding-top: 100px;
+		}
+		table {
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+	<form method="POST">
+		{% csrf_token %}
+		<div class="form-group">
+			<label for="name">Name of your series you want to calculate</label>
+			<input type="text" name="name" id="name" class="form-control" placeholder="Name" required="required">
+		</div>
+		<div class="form-group">
+			<label for="params">Enter values of seeding parameters (if any, comma separated) in the order specified in the table</label>
+			<input type="text" id="params" name="params" class="form-control">
+		</div>
+		<div class="form-group">
+			<label for="params">Enter value of x</label>
+			<input type="text" id="x" name="x" class="form-control" required="required">
+		</div>
+		<div class="form-group">
+			<input type="submit" class="btn btn-primary" value="Calculate">
+		</div>
+	</form>
+	<div style="width: 500px; margin: auto 400px;">
+		<table class="table table-hover">
+			<thead>
+            <tr>
+              <th scope="col">nth term</th>
+              <th scope="col">Sum of n terms</th>
+              <th scope="col">List of n terms</th>
+            </tr>
+          </thead>
+          <tbody id="values">
+          	<tr>
+          		<td>{{ values.nth_term }}</td>
+          		<td>{{ values.sum_n }}</td>
+          		<td>{{ values.list_terms }}</td>
+          	</tr>
+          </tbody>
+		</table>
+	</div>
+	<script
+  	src="https://code.jquery.com/jquery-3.4.1.min.js"
+  	integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  	crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>
