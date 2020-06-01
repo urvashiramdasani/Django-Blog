@@ -1,0 +1,15 @@
+Number,Series Name,Formula,Seeding parameters
+1,Arithmetic Progression,https://www.onlinemathlearning.com/image-files/arithmetic-progression.png,"a, d"
+2,Arithmetico-Geometric,,-
+3,Catalan,https://tomcircle.files.wordpress.com/2014/04/wpid-2014-04-06-14-54-411.png,-
+4,Fibonacci,https://i.pinimg.com/originals/98/82/d5/9882d569f7e0b5665fe3b2edd5069b06.png,-
+5,Geometric Progression,https://www.assignmentpoint.com/wp-content/uploads/2017/11/Geometric-Progression.jpg,"a, r"
+6,Harmonic Progression,https://i1.wp.com/c1.staticflickr.com/5/4219/34155220613_d3557ac1d5_o.jpg?resize=599%2C304&ssl=1,"a, d"
+7,Hexagonal,https://www.biblewheel.com/images/hexagonal.gif,-
+8,Lazy Caterer,https://media.cheggcdn.com/media/fab/faba0ba7-7379-4d14-a05a-caaeff0814a5/phpe3vxfC.png,-
+9,Triangular,,-
+10,abc,#,a
+11,MySeries,#,"a, b"
+12,xyz,#,a
+13,def,#,a
+14,fgh,#,m
